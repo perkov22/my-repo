@@ -2,7 +2,7 @@
     "name": "my-site",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://perkov22.github.io/my-repo/",
+    "homepage": "https://perkov22.github.io/my-site/",
     "dependencies": {
         "@fortawesome/react-fontawesome": "^0.1.4",
         "axios": "^0.18.0",
