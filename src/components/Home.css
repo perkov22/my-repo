@@ -1,0 +1,295 @@
+body {
+    margin: 0 auto 0 auto;
+    max-width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.we-are {
+    font-size: 58px;
+    margin-top: 6%;
+    margin-bottom: 0px;
+    color: rgba(255, 255, 255, 0.822);
+    font-family: 'Kalam', cursive;
+}
+
+.header-title {
+    margin-top: 0px;
+    position: relative;
+    left: -2500px;
+    animation-delay: 1s;
+    -webkit-animation-name: examples;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: inherit;
+    /* Safari 4.0 - 8.0 */
+    animation-name: examples;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.home-div {
+    max-width: 100%;
+}
+
+@keyframes examples {
+    from {
+        left: -2500px;
+        top: 0px;
+    }
+    to {
+        left: 0%;
+        top: 0px;
+    }
+}
+
+.title-h1 {
+    font-size: 40px;
+    color: rgb(250, 250, 250);
+    font-family: 'Kalam', cursive;
+}
+
+.title-h1:hover {
+    cursor: pointer;
+    color: #00BFFF
+}
+
+.button {
+    background-image: linear-gradient(to right, #05355b, #03bffc);
+    box-shadow: none;
+    color: rgb(212, 212, 212);
+    outline: 0px;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    padding: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    border-radius: 30px;
+    margin-bottom: 0px;
+    transition: transform .3s;
+}
+
+.mail {
+    position: relative;
+    left: -2500px;
+    animation-delay: 1s;
+    color: rgb(189, 189, 189);
+    width: 260px;
+    height: 90px;
+    font-size: 18px;
+    margin-left: 70%;
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: initial;
+    /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes example {
+    from {
+        left: -2000px;
+        top: 0px;
+    }
+    to {
+        left: 30px;
+        top: 0px;
+    }
+}
+
+.link3 {
+    text-decoration-line: none
+}
+
+.H1-back {
+    clear: both;
+    height: 90px;
+    padding: 10px;
+    background-color: rgb(245, 244, 244);
+}
+
+.scroll {
+    font-size: 25px;
+    color: #00BFFF;
+    margin: 5px;
+    cursor: pointer;
+    animation: MoveUpDown 1.2s linear infinite;
+    position: relative;
+}
+
+@keyframes MoveUpDown {
+    0%,
+    100% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 5px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+    font-size: 15px
+}
+
+i:hover {
+    color: rgb(11, 84, 93);
+    zoom: 1.1
+}
+
+.whitee-footer {
+    position: relative;
+}
+
+.frame2-div {
+    height: 50px;
+    opacity: 0.8;
+    padding: 10px;
+    margin: 5px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* fraction*/
+}
+
+.header-home {
+    padding: 10px;
+    height: 490px;
+    background-image: url(./banner2.png);
+    width: auto;
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*  +++++++++++++++++++++     HEADER OVDJE ZAVRSAVA    +++++++++++++++++++++++++++ */
+
+.empty {
+    height: 100px;
+    max-width: 100%;
+}
+
+
+/*  +++++++++++++++++++++   ovo je main +++++++++++++++++++++++++++++++++++++ */
+
+.main1 {
+    padding: 10px;
+    max-width: 100%;
+    margin: 7% auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* fraction*/
+}
+
+.div-p {
+    padding: 5px;
+    margin: auto;
+    max-width: 75%
+}
+
+.main7 {
+    padding: 10px;
+    max-width: 80%;
+    margin: 7% auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* fraction*/
+    left: -2500px;
+    position: relative;
+    -webkit-animation-name: animations;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: inherit;
+    /* Safari 4.0 - 8.0 */
+    animation-name: animations;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animations {
+    from {
+        left: 1500px;
+        top: 0px;
+    }
+    to {
+        left: 0%;
+        top: 0px;
+    }
+}
+
+.main2 {
+    padding: 10px;
+    max-width: 100%;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* fraction*/
+}
+
+.pexels3 {
+    width: 352px;
+    height: 244px;
+}
+
+.main3 {
+    max-width: auto;
+    background-image: url(./main3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    padding: 10px;
+}
+
+
+/*  +++++++++++++++++++++   ovo je main +++++++++++++++++++++++++++++++++++++ */
+
+.ul-1 {
+    max-width: 100%;
+    float: left;
+    margin-left: 18%;
+    list-style-type: none
+}
+
+h3 {
+    color: rgb(0, 157, 230)
+}
+
+.ul-2 {
+    padding: 1px;
+    list-style-type: none;
+}
+
+.li {
+    list-style-type: none
+}
+
+.copy {
+    color: #00BFFF;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+.my-logo {
+    text-align: center
+}
+
+.logoo-footer {
+    width: 15%
+}
+
+.whitee-footer {
+    padding: 10px;
+    background-color: black;
+    margin: 0 auto 0 auto;
+    max-width: 100%;
+}

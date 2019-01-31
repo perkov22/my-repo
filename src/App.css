@@ -1,32 +1,145 @@
-.App {
-  text-align: center;
+@media (min-width:1024px) {
+    .main7 {
+        max-width: 100%;
+    }
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+@media (max-width:1023px) {}
+
+@media (max-width:767px) {
+    .logo2 {
+        max-width: 45%;
+    }
+    .my-menu {
+        margin-top: 2%;
+        background-color: rgb(0, 174, 255);
+        display: list-item;
+        height: 320px;
+        position: fixed;
+        overflow: visible;
+        margin-left: 13%;
+        z-index: 1;
+    }
+    li {
+        font-size: 28px;
+        margin: 0 auto 0 auto;
+        max-width: 100%;
+    }
+    .p-nav {
+        text-align: center;
+        padding: 35px;
+    }
+    .scroll {
+        margin-top: 50%
+    }
+    /* main */
+    .main1 {
+        grid-template-columns: none;
+    }
+    .div-p {
+        margin: auto;
+        max-width: 100%
+    }
+    .main2 {
+        grid-template-columns: none;
+    }
+    /* main */
+    .main7 {
+        max-width: 100%;
+        grid-template-columns: none;
+    }
+    .div-s {
+        max-width: 100%;
+        margin: auto
+    }
+    .s-back {
+        max-width: 100%;
+        margin: 0
+    }
+    .ul-2 {
+        margin-right: 7%;
+        float: none;
+        width: 100%;
+        padding: 5px;
+    }
+    .logoo-footer {
+        width: 60%
+    }
+    .ul-1 {
+        margin: 0 auto 0 auto;
+        width: 100%;
+        padding: 5px;
+    }
+    a {
+        font-size: 13px;
+    }
+    .logo2 {
+        margin-left: 5%
+    }
+    .black-footer {
+        float: none;
+        width: 100%;
+    }
+    .white-footer {
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+    .we-are {
+        font-size: 25px
+    }
+    .header-title {
+        font-size: 18px
+    }
+    .mail {
+        display: none;
+    }
+    .Container-form {
+        max-width: 100%;
+    }
+    .frame2-div {
+        padding: 10px;
+        max-width: 100%;
+        grid-template-columns: none;
+        height: 380px;
+    }
+    .white-footer {
+        margin: 0 auto 0 auto;
+    }
+    .copy {
+        padding: 10px;
+        font-size: 11px;
+        margin: 0 auto 0 auto;
+    }
+    .main-text {
+        background-image: none;
+        height: auto;
+        margin-top: 5%
+    }
+    .h1 {
+        text-align: center
+    }
+    /* about page */
+    .img {
+        width: 40%
+    }
+    .p-me {
+        margin: 0;
+        width: 100%
+    }
+    #bars {
+        width: auto;
+        margin: 0 10px 0 0px
+    }
+    .bar {
+        width: 1%
+    }
+    .bar-h3 {
+        color: rgb(44, 44, 44);
+    }
+    .FOOTER {
+        clear: both;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@media (max-width:479px) {}

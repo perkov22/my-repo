@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/icon.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Meera+Inimai|Numans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allan" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+
+
+    <!-- Optional theme -->
+
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -22,9 +33,11 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
+    <title>Innovative-code</title>
+
+</head>
+
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -37,5 +50,111 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+
+    </script>
+
+    <script>
+        (function() {
+
+            var Progress = function(element) {
+
+                this.context = element.getContext("2d");
+                this.refElement = element.parentNode;
+                this.loaded = 10;
+                this.start = 4.72;
+                this.width = this.context.canvas.width;
+                this.height = this.context.canvas.height;
+                this.total = parseInt(this.refElement.dataset.percent, 10);
+                this.timer = null;
+
+                this.diff = 0;
+
+                this.init();
+            };
+
+            Progress.prototype = {
+                init: function() {
+                    var self = this;
+                    self.timer = setInterval(function() {
+                        self.run();
+                    }, 12);
+                },
+                run: function() {
+                    var self = this;
+
+                    self.diff = ((self.loaded / 100) * Math.PI * 2 * 10).toFixed(2);
+                    self.context.clearRect(0, 0, self.width, self.height);
+                    self.context.lineWidth = 5;
+                    self.context.fillStyle = "#EEE";
+                    self.context.strokeStyle = "#03bffc";
+                    self.context.textAlign = "center";
+
+                    self.context.fillText(self.loaded + "%", self.width * .5, self.height * .5 + 2, self.width);
+                    self.context.beginPath();
+                    self.context.arc(35, 35, 20, self.start, self.diff / 10 + self.start, false);
+                    self.context.stroke();
+
+                    if (self.loaded >= self.total) {
+                        clearInterval(self.timer);
+                    }
+
+                    self.loaded++;
+                }
+            };
+
+            var CircularSkillBar = function(elements) {
+                this.bars = document.querySelectorAll(elements);
+                if (this.bars.length > 0) {
+                    this.init();
+                }
+            };
+
+            CircularSkillBar.prototype = {
+                init: function() {
+                    this.tick = 25;
+                    this.progress();
+
+                },
+                progress: function() {
+                    var self = this;
+                    var index = 0;
+                    var firstCanvas = self.bars[0].querySelector("canvas");
+                    var firstProg = new Progress(firstCanvas);
+
+
+
+                    var timer = setInterval(function() {
+                        index++;
+
+                        var canvas = self.bars[index].querySelector("canvas");
+                        var prog = new Progress(canvas);
+
+                        if (index == self.bars.length) {
+                            clearInterval(timer);
+                        }
+
+                    }, self.tick * 100);
+
+                }
+            };
+
+            document.addEventListener("DOMContentLoaded", function() {
+                var circularBars = new CircularSkillBar("#bars .bar");
+            });
+
+        })();
+    </script>
+    <script>
+        window.addEventListener("scroll", function() {
+            var target = document.getElementsByClassName('services1');
+
+            if (window.pageYOffset > 10) {
+                target[0].style.display = "block";
+            }
+
+        }, false);
+    </script>
+
+</body>
+
 </html>
